@@ -7,8 +7,6 @@ const User = require('../../models/User');
 const registerUser = async (req, res) => {
   const { userName, email, password } = req.body;
 
-
-
   try {
 
     const hashPassword = await bcrypt.hash(password, 12)
@@ -33,7 +31,7 @@ const registerUser = async (req, res) => {
 };
 
 //Login
-const login = async (req, res) => {
+const loginUser = async (req, res) => {
   const { userName, email, password } = req.body;
 
   try {
@@ -51,4 +49,4 @@ const login = async (req, res) => {
 
 
 
-module.exports = { registerUser }
+module.exports = { registerUser, loginUser }
