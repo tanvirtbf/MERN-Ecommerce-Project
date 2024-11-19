@@ -17,7 +17,6 @@ import ShoppingListing from "./pages/shopping-view/listing";
 import UnauthPage from "./pages/unauth-page";
 
 function App() {
-
   const isAuthenticated = false
   const user = {role:"user"}
 
